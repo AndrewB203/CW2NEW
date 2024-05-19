@@ -341,15 +341,6 @@ gtest_force_shared_crt:BOOL=OFF
 //Build gtest with internal symbols hidden in shared libraries.
 gtest_hide_internal_symbols:BOOL=OFF
 
-//Value Computed by CMake
-tests_BINARY_DIR:STATIC=/home/andrew/AndrewB203/workspacenew/CW2/build/tests
-
-//Value Computed by CMake
-tests_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-tests_SOURCE_DIR:STATIC=/home/andrew/AndrewB203/workspacenew/CW2/tests
-
 
 ########################
 # INTERNAL cache entries
@@ -491,7 +482,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

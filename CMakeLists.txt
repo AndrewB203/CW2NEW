@@ -4,7 +4,7 @@ enable_testing()
 
 #option(BUILD_EXAMPLES "Build examples" OFF)
 #option(BUILD_TESTS "Build tests" OFF)
-
+add_subdirectory(extern/googletest)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
