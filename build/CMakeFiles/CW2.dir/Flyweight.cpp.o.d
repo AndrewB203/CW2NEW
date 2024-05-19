@@ -1,6 +1,8 @@
-CMakeFiles/FlyweightDesignPattern.dir/FlyweightPattern.cpp.o: \
- /home/andrew/AndrewB203/workspacenew/CW2/FlyweightPattern.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
+CMakeFiles/CW2.dir/Flyweight.cpp.o: \
+ /home/andrew/AndrewB203/workspacenew/CW2/Flyweight.cpp \
+ /usr/include/stdc-predef.h \
+ /home/andrew/AndrewB203/workspacenew/CW2/Flyweight.h \
+ /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

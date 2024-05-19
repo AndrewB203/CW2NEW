@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/andrew/AndrewB203/workspacenew/CW2/FlyweightPattern.cpp" "CMakeFiles/FlyweightDesignPattern.dir/FlyweightPattern.cpp.o" "gcc" "CMakeFiles/FlyweightDesignPattern.dir/FlyweightPattern.cpp.o.d"
+  "/home/andrew/AndrewB203/workspacenew/CW2/Flyweight.cpp" "CMakeFiles/CW2.dir/Flyweight.cpp.o" "gcc" "CMakeFiles/CW2.dir/Flyweight.cpp.o.d"
+  "/home/andrew/AndrewB203/workspacenew/CW2/FlyweightPattern.cpp" "CMakeFiles/CW2.dir/FlyweightPattern.cpp.o" "gcc" "CMakeFiles/CW2.dir/FlyweightPattern.cpp.o.d"
   )
 
 # Targets to which this target links.

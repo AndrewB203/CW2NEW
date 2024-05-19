@@ -63,42 +63,85 @@ CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/CW2/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/FlyweightDesignPattern.dir/all
+all: CMakeFiles/CW2.dir/all
+all: tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/FlyweightDesignPattern.dir/clean
+clean: CMakeFiles/CW2.dir/clean
+clean: tests/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/FlyweightDesignPattern.dir
+# Directory level rules for directory tests
+
+# Recursive "all" directory target.
+tests/all: tests/CMakeFiles/FlyweightTests.dir/all
+.PHONY : tests/all
+
+# Recursive "preinstall" directory target.
+tests/preinstall:
+.PHONY : tests/preinstall
+
+# Recursive "clean" directory target.
+tests/clean: tests/CMakeFiles/FlyweightTests.dir/clean
+.PHONY : tests/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CW2.dir
 
 # All Build rule for target.
-CMakeFiles/FlyweightDesignPattern.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FlyweightDesignPattern.dir/build.make CMakeFiles/FlyweightDesignPattern.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FlyweightDesignPattern.dir/build.make CMakeFiles/FlyweightDesignPattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles --progress-num=1,2 "Built target FlyweightDesignPattern"
-.PHONY : CMakeFiles/FlyweightDesignPattern.dir/all
+CMakeFiles/CW2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles --progress-num=1,2,3 "Built target CW2"
+.PHONY : CMakeFiles/CW2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/FlyweightDesignPattern.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FlyweightDesignPattern.dir/all
+CMakeFiles/CW2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CW2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles 0
-.PHONY : CMakeFiles/FlyweightDesignPattern.dir/rule
+.PHONY : CMakeFiles/CW2.dir/rule
 
 # Convenience name for target.
-FlyweightDesignPattern: CMakeFiles/FlyweightDesignPattern.dir/rule
-.PHONY : FlyweightDesignPattern
+CW2: CMakeFiles/CW2.dir/rule
+.PHONY : CW2
 
 # clean rule for target.
-CMakeFiles/FlyweightDesignPattern.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FlyweightDesignPattern.dir/build.make CMakeFiles/FlyweightDesignPattern.dir/clean
-.PHONY : CMakeFiles/FlyweightDesignPattern.dir/clean
+CMakeFiles/CW2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/clean
+.PHONY : CMakeFiles/CW2.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/FlyweightTests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/FlyweightTests.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/FlyweightTests.dir/build.make tests/CMakeFiles/FlyweightTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/FlyweightTests.dir/build.make tests/CMakeFiles/FlyweightTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles --progress-num=4,5,6,7,8 "Built target FlyweightTests"
+.PHONY : tests/CMakeFiles/FlyweightTests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/FlyweightTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/FlyweightTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/FlyweightTests.dir/rule
+
+# Convenience name for target.
+FlyweightTests: tests/CMakeFiles/FlyweightTests.dir/rule
+.PHONY : FlyweightTests
+
+# clean rule for target.
+tests/CMakeFiles/FlyweightTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/FlyweightTests.dir/build.make tests/CMakeFiles/FlyweightTests.dir/clean
+.PHONY : tests/CMakeFiles/FlyweightTests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

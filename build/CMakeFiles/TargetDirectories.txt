@@ -1,3 +1,8 @@
-/home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles/FlyweightDesignPattern.dir
+/home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles/CW2.dir
+/home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles/test.dir
 /home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles/edit_cache.dir
 /home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles/rebuild_cache.dir
+/home/andrew/AndrewB203/workspacenew/CW2/build/tests/CMakeFiles/FlyweightTests.dir
+/home/andrew/AndrewB203/workspacenew/CW2/build/tests/CMakeFiles/test.dir
+/home/andrew/AndrewB203/workspacenew/CW2/build/tests/CMakeFiles/edit_cache.dir
+/home/andrew/AndrewB203/workspacenew/CW2/build/tests/CMakeFiles/rebuild_cache.dir

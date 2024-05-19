@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/andrew/AndrewB203/workspacenew/CW2/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -117,24 +127,61 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FlyweightDesignPattern
+# Target rules for targets named CW2
 
 # Build rule for target.
-FlyweightDesignPattern: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FlyweightDesignPattern
-.PHONY : FlyweightDesignPattern
+CW2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CW2
+.PHONY : CW2
 
 # fast build rule for target.
-FlyweightDesignPattern/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FlyweightDesignPattern.dir/build.make CMakeFiles/FlyweightDesignPattern.dir/build
-.PHONY : FlyweightDesignPattern/fast
+CW2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/build
+.PHONY : CW2/fast
+
+#=============================================================================
+# Target rules for targets named FlyweightTests
+
+# Build rule for target.
+FlyweightTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FlyweightTests
+.PHONY : FlyweightTests
+
+# fast build rule for target.
+FlyweightTests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/FlyweightTests.dir/build.make tests/CMakeFiles/FlyweightTests.dir/build
+.PHONY : FlyweightTests/fast
+
+Flyweight.o: Flyweight.cpp.o
+.PHONY : Flyweight.o
+
+# target to build an object file
+Flyweight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/Flyweight.cpp.o
+.PHONY : Flyweight.cpp.o
+
+Flyweight.i: Flyweight.cpp.i
+.PHONY : Flyweight.i
+
+# target to preprocess a source file
+Flyweight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/Flyweight.cpp.i
+.PHONY : Flyweight.cpp.i
+
+Flyweight.s: Flyweight.cpp.s
+.PHONY : Flyweight.s
+
+# target to generate assembly for a file
+Flyweight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/Flyweight.cpp.s
+.PHONY : Flyweight.cpp.s
 
 FlyweightPattern.o: FlyweightPattern.cpp.o
 .PHONY : FlyweightPattern.o
 
 # target to build an object file
 FlyweightPattern.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FlyweightDesignPattern.dir/build.make CMakeFiles/FlyweightDesignPattern.dir/FlyweightPattern.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/FlyweightPattern.cpp.o
 .PHONY : FlyweightPattern.cpp.o
 
 FlyweightPattern.i: FlyweightPattern.cpp.i
@@ -142,7 +189,7 @@ FlyweightPattern.i: FlyweightPattern.cpp.i
 
 # target to preprocess a source file
 FlyweightPattern.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FlyweightDesignPattern.dir/build.make CMakeFiles/FlyweightDesignPattern.dir/FlyweightPattern.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/FlyweightPattern.cpp.i
 .PHONY : FlyweightPattern.cpp.i
 
 FlyweightPattern.s: FlyweightPattern.cpp.s
@@ -150,7 +197,7 @@ FlyweightPattern.s: FlyweightPattern.cpp.s
 
 # target to generate assembly for a file
 FlyweightPattern.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FlyweightDesignPattern.dir/build.make CMakeFiles/FlyweightDesignPattern.dir/FlyweightPattern.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CW2.dir/build.make CMakeFiles/CW2.dir/FlyweightPattern.cpp.s
 .PHONY : FlyweightPattern.cpp.s
 
 # Help Target
@@ -161,7 +208,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... FlyweightDesignPattern"
+	@echo "... test"
+	@echo "... CW2"
+	@echo "... FlyweightTests"
+	@echo "... Flyweight.o"
+	@echo "... Flyweight.i"
+	@echo "... Flyweight.s"
 	@echo "... FlyweightPattern.o"
 	@echo "... FlyweightPattern.i"
 	@echo "... FlyweightPattern.s"

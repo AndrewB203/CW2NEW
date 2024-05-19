@@ -1,0 +1,49 @@
+Start testing: May 19 16:21 MSK
+----------------------------------------------------------
+1/1 Testing: FlyweightTests
+1/1 Test: FlyweightTests
+Command: "/home/andrew/AndrewB203/workspacenew/CW2/build/tests/FlyweightTests"
+Directory: /home/andrew/AndrewB203/workspacenew/CW2/build/tests
+"FlyweightTests" start time: May 19 16:21 MSK
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 5 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from FlyweightTest
+[ RUN      ] FlyweightTest.GetState
+ConcreteFlyweight Build...test
+[       OK ] FlyweightTest.GetState (0 ms)
+[ RUN      ] FlyweightTest.Operation
+ConcreteFlyweight Build...test
+[       OK ] FlyweightTest.Operation (0 ms)
+[----------] 2 tests from FlyweightTest (0 ms total)
+
+[----------] 2 tests from ConcreteFlyweightTest
+[ RUN      ] ConcreteFlyweightTest.Construction
+[       OK ] ConcreteFlyweightTest.Construction (0 ms)
+[ RUN      ] ConcreteFlyweightTest.Operation
+ConcreteFlyweight Build...test
+[       OK ] ConcreteFlyweightTest.Operation (0 ms)
+[----------] 2 tests from ConcreteFlyweightTest (0 ms total)
+
+[----------] 1 test from FlyweightFactoryTest
+[ RUN      ] FlyweightFactoryTest.GetFlyweight
+ConcreteFlyweight Build...hello
+ConcreteFlyweight Build...world
+already created by users...
+[       OK ] FlyweightFactoryTest.GetFlyweight (0 ms)
+[----------] 1 test from FlyweightFactoryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 3 test suites ran. (0 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FlyweightTests" end time: May 19 16:21 MSK
+"FlyweightTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 19 16:21 MSK

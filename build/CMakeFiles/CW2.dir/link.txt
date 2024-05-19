@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/CW2.dir/Flyweight.cpp.o CMakeFiles/CW2.dir/FlyweightPattern.cpp.o -o CW2 
