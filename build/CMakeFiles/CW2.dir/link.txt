@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/CW2.dir/Flyweight.cpp.o CMakeFiles/CW2.dir/FlyweightPattern.cpp.o -o CW2 
+/usr/bin/c++ CMakeFiles/CW2.dir/Flyweight.cpp.o CMakeFiles/CW2.dir/FlyweightPattern.cpp.o -o CW2  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a 

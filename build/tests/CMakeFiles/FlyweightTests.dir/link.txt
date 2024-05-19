@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/FlyweightTests.dir/FlyweightTest.cpp.o CMakeFiles/FlyweightTests.dir/ConcreteFlyweightTest.cpp.o CMakeFiles/FlyweightTests.dir/FlyweightFactoryTest.cpp.o CMakeFiles/FlyweightTests.dir/__/Flyweight.cpp.o -o FlyweightTests  -lgtest -lgtest_main 
+/usr/bin/c++ CMakeFiles/FlyweightTests.dir/FlyweightTest.cpp.o CMakeFiles/FlyweightTests.dir/ConcreteFlyweightTest.cpp.o CMakeFiles/FlyweightTests.dir/FlyweightFactoryTest.cpp.o CMakeFiles/FlyweightTests.dir/__/Flyweight.cpp.o -o FlyweightTests  ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a 

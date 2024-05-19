@@ -140,6 +140,9 @@ tests/FlyweightTests: tests/CMakeFiles/FlyweightTests.dir/ConcreteFlyweightTest.
 tests/FlyweightTests: tests/CMakeFiles/FlyweightTests.dir/FlyweightFactoryTest.cpp.o
 tests/FlyweightTests: tests/CMakeFiles/FlyweightTests.dir/__/Flyweight.cpp.o
 tests/FlyweightTests: tests/CMakeFiles/FlyweightTests.dir/build.make
+tests/FlyweightTests: lib/libgtest.a
+tests/FlyweightTests: lib/libgtest_main.a
+tests/FlyweightTests: lib/libgtest.a
 tests/FlyweightTests: tests/CMakeFiles/FlyweightTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrew/AndrewB203/workspacenew/CW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable FlyweightTests"
 	cd /home/andrew/AndrewB203/workspacenew/CW2/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FlyweightTests.dir/link.txt --verbose=$(VERBOSE)

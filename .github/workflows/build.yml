@@ -1,4 +1,4 @@
-name: Build C++ Project
+name: CMake
 
 on:
   push:
@@ -8,8 +8,17 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Echo a string
-      run: echo "Hello, GitHub Actions!"
+    - uses: actions/checkout@v2
+
+    - name: Configure CMake
+      run: cmake .
+
+    - name: Build
+      run: cmake --build . --config Release
+
+    - name: Test
+      run: ctest -C Release
