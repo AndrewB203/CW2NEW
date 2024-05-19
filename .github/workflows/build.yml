@@ -1,4 +1,4 @@
-name: CMake
+name: C++ CI
 
 on:
   push:
@@ -20,5 +20,11 @@ jobs:
     - name: Build
       run: cmake --build . --config Release
 
-    - name: Test
+    - name: Run tests
       run: ctest -C Release
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: CW2
+        path: CW2
